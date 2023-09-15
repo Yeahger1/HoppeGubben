@@ -32,8 +32,14 @@ public class HoppeGubben : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         // Draw a yellow sphere at the transform's position
+
         Gizmos.color = Color.green;
+
+        Gizmos.color = Color.red;
+
         Gizmos.DrawWireSphere(transform.position, radius);
     }
+
+    //hej
 }
       
