@@ -35,5 +35,7 @@ public class HoppeGubben : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, radius);
     }
+
+    //hej
 }
       
