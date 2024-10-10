@@ -93,15 +93,15 @@ public class planeMoveScript2 : MonoBehaviour
     }
     private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
     {
-        //If planes colide, change picture, stop them and then destroys them
-        //if (collision.gameObject.layer == 3 && power.gravityFieldOn == false)
-        //{
-        //    changeSprite();
-        //    spawnJumper();
-        //    moveSpeed = 0;
-        //    Invoke("killPlane", 0.5f);
-        //    logic.gameOver();
-        //}
+      //  If planes colide, change picture, stop them and then destroys them
+        if (collision.gameObject.layer == 3 && power.gravityFieldOn == false)
+        {
+            changeSprite();
+            spawnJumper();
+            moveSpeed = 0;
+            Invoke("killPlane", 0.5f);
+            logic.gameOver();
+        }
     }
     void changeSprite()
     {
